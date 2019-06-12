@@ -7,7 +7,6 @@ let minutes = parseInt(readline.question("How many minutes have you talked? "));
 //Declare the variable mustPay where I will save the fee
 let mustPay;
 
-
 if (minutes <= 180){ //If the minutes are less than 180 
     //The fee will be 10
     mustPay = 10;
@@ -19,5 +18,6 @@ if (minutes <= 180){ //If the minutes are less than 180
     //plus the minutes that exceed the 240 multiplied by 0.2
     mustPay = 10 + (60*0.1) + ((minutes-240)*0.2);
 }
+
 //Display by console the fee to the user
 console.log("Must pay "+mustPay+" euros.")
